@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-	--level1: hsl(95, 90%, 54%); /* Paleta de colores */
+	--level1: hsl(23, 90%, 54%); /* Paleta de colores */
 	--level2: hsl(23, 4%, 59%);
 	--level3: hsl(23, 4%, 49%);
 	--light: #f2fbf6;
