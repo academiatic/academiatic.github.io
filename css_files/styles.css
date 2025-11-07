@@ -1,5 +1,7 @@
 @import url(cards.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 /* Variables */
 :root {
 	--level1: hsl(23, 90%, 54%); /* Paleta de colores */
@@ -23,7 +25,7 @@
 
 /* Estilos generales */
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
 	line-height: 1.6;
 	color: var(--dark);
 	background-color: var(--light);
