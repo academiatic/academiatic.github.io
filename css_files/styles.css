@@ -30,7 +30,7 @@ body {
 	color: var(--dark);
 	background-color: var(--light);
 
-	&.general .container {
+	&.index .container {
 		display: grid;
 		grid-template-rows: var(--height-header) var(--height-nav) auto var(--height-footer);
 		grid-template-columns: var(--width-aside) 2fr;
@@ -43,7 +43,7 @@ body {
 		gap: 0;
 	}
 
-	&.products .container {
+	&.general .container {
 		display: grid;
 		grid-template-rows: var(--height-header) var(--height-nav) auto var(--height-footer);
 		grid-template-columns: auto;
@@ -110,7 +110,50 @@ header {
 main {
 	grid-area: main;
 	background-color: var(--light);
-	padding: 2rem;
+	padding: 1cm;
+}
+
+main.contact {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"main_box social_box";
+	background-color: var(--light);
+	padding: 1cm;
+
+	& .main_box {
+		grid-area: main_box;
+		background-color: white;
+		color: var(--dark);
+		padding: 1cm;
+		margin-right: 0.2cm; 
+		border-radius: 12px;
+		box-shadow: 0 8px 24px rgba(26, 115, 75, 0.12);
+	}
+	
+	& .main_box:hover {
+		box-shadow: 0 12px 36px rgba(26, 115, 75, 0.16);
+		transform: translateY(-4px);
+		transition: box-shadow 0.3s ease, transform 0.3s ease;
+	}
+
+	& .social_box {
+		grid-area: social_box;
+		background-color: white;
+		color: var(--dark);
+		padding: 1cm;
+		margin-left: 0.3cm;
+		border-radius: 12px;
+		box-shadow: 0 8px 24px rgba(26, 115, 75, 0.12);
+	}
+
+	& .social_box:hover {
+		box-shadow: 0 12px 36px rgba(26, 115, 75, 0.16);
+		transform: translateY(-4px);
+		transition: box-shadow 0.3s ease, transform 0.3s ease;
+	}
 }
 
 aside {
