@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tienda educactiva</title>
     <link rel="stylesheet" href="css_files/styles.css" />
-    <link rel="icon" href="fotos/logo.jpeg" type="image/jpeg" />
+    <link rel="icon" href="fotos/logo.svg" type="image/svg" />
 </head>
 
 <body class="index">
@@ -14,7 +14,7 @@
     <div class="container">
 
         <header>
-            <img src="fotos/logo.jpeg" class="logo"/>
+            <img src="fotos/logo.svg" class="logo"/>
             <h1>Academia TIC</h1>
         </header>
 
@@ -31,7 +31,12 @@
         <aside>
             <h3>Barra Lateral</h3>
             <nav class="nav-lateral">
-                <a>Enlace 1</a>
+                <a>
+                    Enlace 1
+                    <input type="file" id="archivoExcel" accept=".xlsx" />
+                    <button onclick="procesarArchivo()">Subir y Guardar</button>
+                    <p id="mensaje"></p>
+                </a>
                 <a>Enlace 2</a>
                 <a>Enlace 3</a>
             </nav>
@@ -44,5 +49,8 @@
     </div>
 
 </body>
+
+<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+<script src="js_files/main.js"></script>
 
 </html>
