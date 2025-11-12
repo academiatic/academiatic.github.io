@@ -23,7 +23,6 @@
 }
 
 .card:hover{
-    background-color: var(--level5);
     box-shadow: 0 8px 24px rgba(26, 115, 75, 0.12);
     transform: translateY(-4px);
 }
